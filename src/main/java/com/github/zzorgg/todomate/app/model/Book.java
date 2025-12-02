@@ -3,10 +3,10 @@ package com.github.zzorgg.todomate.app.model;
 
 public class Book {
 
-    int id; // unique id of the book (isbn)
-    String title; // title of the book
-    String author; // author of the book
-    boolean isAvailable; // whether book is available in the library or not
+    private int id; // unique id of the book (isbn)
+    private String title; // title of the book
+    private String author; // author of the book
+    private boolean isAvailable; // whether book is available in the library or not
 
     public Book() {
         this.id = -1;
@@ -29,5 +29,37 @@ public class Book {
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", isAvailable=" + isAvailable;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public boolean getAvailable() {
+        return isAvailable;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setAvailable(boolean available) {
+        isAvailable = available;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 }

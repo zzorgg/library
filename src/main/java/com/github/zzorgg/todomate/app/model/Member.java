@@ -3,9 +3,9 @@ package com.github.zzorgg.todomate.app.model;
 
 public class Member {
 
-    int memberId; // libraryCard
-    String name; // name of member
-    int borrowedBooks; // how many books they have borrowed
+    private int memberId; // libraryCard
+    private String name; // name of member
+    private int borrowedBooks; // how many books they have borrowed
 
     public Member() {
         this.memberId = -1;
@@ -26,5 +26,29 @@ public class Member {
                 "memberId=" + memberId +
                 ", name='" + name + '\'' +
                 ", borrowedBooks=" + borrowedBooks;
+    }
+
+    public int getMemberId() {
+        return memberId;
+    }
+
+    public void setMemberId(int memberId) {
+        this.memberId = memberId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getBorrowedBooks() {
+        return borrowedBooks;
+    }
+
+    public void setBorrowedBooks(int borrowedBooks) {
+        this.borrowedBooks = borrowedBooks;
     }
 }
