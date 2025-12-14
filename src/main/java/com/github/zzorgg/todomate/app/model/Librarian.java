@@ -12,4 +12,9 @@ public class Librarian extends BaseUser{
     public void manageBooks() {
         System.out.println(getName() + " is managing books.");
     }
+
+    @Override
+    public String user() {
+        return "Librarian";
+    }
 }

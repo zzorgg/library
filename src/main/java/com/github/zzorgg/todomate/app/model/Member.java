@@ -24,6 +24,10 @@ public class Member extends BaseUser{
         this.borrowedBooks = borrowedBooks;
     }
 
+    @Override
+    public String user() {
+        return "Member";
+    }
     // To print using the reference variable override the toString()
     @Override
     public String toString() {

@@ -29,4 +29,8 @@ public class BaseUser {
     public void setName() {
         this.name = name;
     }
+
+    public String user() {
+        return "Base Users";
+    }
 }
